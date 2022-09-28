@@ -19,3 +19,35 @@ wesselenyi-11_I#write
 Building configuration...
 [OK]
 wesselenyi-11_I#
+wesselenyi-11_I#quit
+Translating "quit"...domain server (255.255.255.255)
+% Unknown command or computer name, or unable to find computer address
+
+wesselenyi-11_I#
+
+
+
+
+
+
+
+
+wesselenyi-11_I con0 is now available
+
+
+
+
+
+
+Press RETURN to get started.
+
+elmentem en a vassara fel penzel
+
+wesselenyi-11_I>en
+wesselenyi-11_I#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+wesselenyi-11_I(config)#no ip
+% Incomplete command.
+wesselenyi-11_I(config)#no ip domain-l
+wesselenyi-11_I(config)#no ip domain-lookup 
+wesselenyi-11_I(config)#
