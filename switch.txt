@@ -107,3 +107,30 @@ Directory of nvram:/
 1048 bytes total (237588 bytes free)
 
 wesselenyi-11_I#
+wesselenyi-11_I#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+wesselenyi-11_I(config)#int
+wesselenyi-11_I(config)#interface vlan1
+wesselenyi-11_I(config)#interface vlan1
+wesselenyi-11_I(config-if)#ip address 192.168.1.1 255.255.255.0
+wesselenyi-11_I(config-if)#no shut
+
+wesselenyi-11_I(config-if)#
+%LINK-5-CHANGED: Interface Vlan1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+exit
+wesselenyi-11_I(config)#write
+wesselenyi-11_I(config)#write
+                        ^
+% Invalid input detected at '^' marker.
+	
+wesselenyi-11_I(config)#exit
+wesselenyi-11_I#
+%SYS-5-CONFIG_I: Configured from console by console
+
+wesselenyi-11_I#write
+Building configuration...
+[OK]
+wesselenyi-11_I#
+
