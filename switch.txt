@@ -140,3 +140,61 @@ wesselenyi-11_I(config)#vlan10
 	
 wesselenyi-11_I(config)#vlan 10
 wesselenyi-11_I(config-vlan)#
+wesselenyi-11_I(config)#vlan 10
+wesselenyi-11_I(config-vlan)#name EDNC
+wesselenyi-11_I(config-vlan)#exit
+wesselenyi-11_I(config)#dir
+                         ^
+% Invalid input detected at '^' marker.
+	
+wesselenyi-11_I(config)#eit
+                         ^
+% Invalid input detected at '^' marker.
+	
+wesselenyi-11_I(config)#dir
+                         ^
+% Invalid input detected at '^' marker.
+	
+wesselenyi-11_I(config)#exit
+wesselenyi-11_I#
+%SYS-5-CONFIG_I: Configured from console by console
+
+wesselenyi-11_I#dir
+Directory of flash:/
+
+    1  -rw-     4670455          <no date>  2960-lanbasek9-mz.150-2.SE4.bin
+    2  -rw-        1169          <no date>  config.text
+    3  -rw-         616          <no date>  vlan.dat
+
+64016384 bytes total (59344144 bytes free)
+wesselenyi-11_I#en
+wesselenyi-11_I#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+wesselenyi-11_I(config)#int
+wesselenyi-11_I(config)#interface fat
+wesselenyi-11_I(config)#interface fast
+wesselenyi-11_I(config)#interface fastEthernet 0/1-10
+                                                 ^
+% Invalid input detected at '^' marker.
+	
+wesselenyi-11_I(config)#interface fastEthernet 0/1 - 10
+                                                   ^
+% Invalid input detected at '^' marker.
+	
+wesselenyi-11_I(config)#interface ram fastEthernet 0/1 - 10
+                                    ^
+% Invalid input detected at '^' marker.
+	
+wesselenyi-11_I(config)#interface range fastEthernet 0/1 - 10
+wesselenyi-11_I(config-if-range)#sw
+wesselenyi-11_I(config-if-range)#switchport acces vlan 10
+wesselenyi-11_I(config-if-range)#
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+
+wesselenyi-11_I(config-if-range)#sw 
+wesselenyi-11_I(config-if-range)#sw 
+wesselenyi-11_I(config-if-range)#sw
+wesselenyi-11_I(config-if-range)#switchport mode access
+wesselenyi-11_I(config-if-range)#
+wesselenyi-11_I(config-if-range)#
+
