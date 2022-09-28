@@ -26,18 +26,9 @@ Translating "quit"...domain server (255.255.255.255)
 wesselenyi-11_I#
 
 
-
-
-
-
-
+_______________________________________________________________________________________________________________--
 
 wesselenyi-11_I con0 is now available
-
-
-
-
-
 
 Press RETURN to get started.
 
@@ -80,6 +71,8 @@ Press RETURN to get started.
 
 elmentem en a vassara fel penzel
 
+________________________________________________________________________________________________________________________________-
+
 wesselenyi-11_I>
 wesselenyi-11_I>
 wesselenyi-11_I>
@@ -105,6 +98,8 @@ Directory of nvram:/
   238  -rw-        1048          <no date>  startup-config
 
 1048 bytes total (237588 bytes free)
+
+___________________________________________________________________________________________________________________
 
 wesselenyi-11_I#
 wesselenyi-11_I#config t
