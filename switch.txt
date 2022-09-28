@@ -128,4 +128,15 @@ wesselenyi-11_I#write
 Building configuration...
 [OK]
 wesselenyi-11_I#
-
+_____________________________________________________________________________________________________________________________-
+wesselenyi-11_I>
+wesselenyi-11_I>
+wesselenyi-11_I>en
+wesselenyi-11_I#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+wesselenyi-11_I(config)#vlan10
+                            ^
+% Invalid input detected at '^' marker.
+	
+wesselenyi-11_I(config)#vlan 10
+wesselenyi-11_I(config-vlan)#
