@@ -1,0 +1,13 @@
+
+Switch>
+Switch>
+Switch>
+Switch>en
+Switch#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#hos
+% Incomplete command.
+Switch(config)#hostname wesselenyi-11_I
+wesselenyi-11_I(config)#
+wesselenyi-11_I(config)#banner motd "elmentem en a vassara fel penzel"
+wesselenyi-11_I(config)#
