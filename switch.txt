@@ -51,3 +51,33 @@ wesselenyi-11_I(config)#no ip
 wesselenyi-11_I(config)#no ip domain-l
 wesselenyi-11_I(config)#no ip domain-lookup 
 wesselenyi-11_I(config)#
+wesselenyi-11_I(config)#exit
+wesselenyi-11_I#
+%SYS-5-CONFIG_I: Configured from console by console
+
+wesselenyi-11_I#qiut
+Translating "qiut"
+% Unknown command or computer name, or unable to find computer address
+
+wesselenyi-11_I#quit
+Translating "quit"
+% Unknown command or computer name, or unable to find computer address
+
+wesselenyi-11_I#
+wesselenyi-11_I#
+wesselenyi-11_I#
+wesselenyi-11_I#quit
+Translating "quit"
+% Unknown command or computer name, or unable to find computer address
+
+wesselenyi-11_I#logout
+
+wesselenyi-11_I con0 is now available
+
+
+Press RETURN to get started.
+
+
+elmentem en a vassara fel penzel
+
+wesselenyi-11_I>
