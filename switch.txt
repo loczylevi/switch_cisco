@@ -81,3 +81,29 @@ Press RETURN to get started.
 elmentem en a vassara fel penzel
 
 wesselenyi-11_I>
+wesselenyi-11_I>
+wesselenyi-11_I>
+wesselenyi-11_I>dir
+Translating "dir"
+% Unknown command or computer name, or unable to find computer address
+
+wesselenyi-11_I>en
+wesselenyi-11_I#dir
+Directory of flash:/
+
+    1  -rw-     4670455          <no date>  2960-lanbasek9-mz.150-2.SE4.bin
+    2  -rw-        1136          <no date>  config.text
+
+64016384 bytes total (59344793 bytes free)
+wesselenyi-11_I#dir envram:
+                    ^
+% Invalid input detected at '^' marker.
+	
+wesselenyi-11_I#dir nvram:
+Directory of nvram:/
+
+  238  -rw-        1048          <no date>  startup-config
+
+1048 bytes total (237588 bytes free)
+
+wesselenyi-11_I#
