@@ -11,3 +11,11 @@ Switch(config)#hostname wesselenyi-11_I
 wesselenyi-11_I(config)#
 wesselenyi-11_I(config)#banner motd "elmentem en a vassara fel penzel"
 wesselenyi-11_I(config)#
+wesselenyi-11_I(config)#exit
+wesselenyi-11_I#
+%SYS-5-CONFIG_I: Configured from console by console
+
+wesselenyi-11_I#write
+Building configuration...
+[OK]
+wesselenyi-11_I#
