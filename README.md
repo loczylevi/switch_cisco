@@ -1,1 +1,3 @@
 # switch kodok....
+
+kepernyokep ---> pc0/1/2/3.txt + tanuld meg txt
