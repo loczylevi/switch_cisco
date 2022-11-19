@@ -1,0 +1,76 @@
+show ver
+do show ip interface brief
+hostname csira
+user fact secr student 1234
+vlan 10
+name igazgato
+vlan 20
+name tanar
+vlan 30
+name tanulo
+vlan 99
+name wmszc
+int vlan 99
+ip address 192.168.1.6 255.255.255.0
+no shut
+int range Gi1/0/1-4
+sw mode access
+sw access vlan 10
+
+int range gi0/15-19
+switchport mode trunk
+switchport trunk allowed vlan 10,20,30,99
+switchport tunk native vlan 99
+end
+copy run lab11i-1-2
+
+
+
+enable
+configure t
+hostname SW2  
+user jozsi secret 1234  
+ena secret 1234
+vlan 10 
+int vlan 10
+ip address 192.168.1.2 255.255.255.0  
+no shutdown 
+int range Fa0/1-7
+sw mode access    
+switchport access vlan 10 
+
+
+int ran g0/1-2
+sw mode trunk
+sw trunk alowe vlan all
+
+
+SUB INTERFACE
+
+int g0/0.1
+  enc ot1q 10
+  ip add 10.1.1.27
+  
+
+int g0/0.2
+  enc ot1q 20
+  ip add 10.1.2.27
+  
+ 
+int g0/0.3
+  enc ot1q 30
+  ip add 10.1.3.27
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
