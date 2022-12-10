@@ -1,0 +1,59 @@
+en 
+dir nvram:
+
+_______________________________________________-
+
+conf t
+int vlan 99
+ip address 172.17.99.11 255.255.255.0
+ipv6 address 2001:db8:acad:99::11/64
+no shut
+end
+copy running-config startup-config
+
+_______________________________________________-
+
+en
+conf t
+
+ip default-gateway 172.17.99.1
+end
+copy running-config startup-config
+
+show ip interface brief
+
+_______________________________________________-
+
+en 
+sh run
+
+show startup-config
+show interface vlan1
+
+show ip interface vlan1
+
+do sh version
+show interface gig1/0/6
+
+show vlan
+
+show flash:
+dir flash:
+_______________________________________________________
+no ip domain-lookup
+
+hostname S1
+
+service password-encryption
+
+enable secret class
+
+banner motd #
+
+Unauthorized access is strictly prohibited. #
+
+________________________________________________________-
+___________________________________________________________
+
+
+
