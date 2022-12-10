@@ -52,8 +52,53 @@ banner motd #
 
 Unauthorized access is strictly prohibited. #
 
+VAGY
+
+banner motd %ide valami szöveg%
+
 ________________________________________________________-
 ___________________________________________________________
 
 
+Switch(config)#no ip domain-lookup
+Switch(config)#hostname S1
+S1(config)#service password-encryption
+S1(config)#enable secret class
+S1(config)#banner motd #
+Enter TEXT message.  End with the character '#'.
+Unauthorized access is strictly prohibited. #
+
+S1(config)#
+S1(config)#
+S1(config)#vlan 99
+S1(config-vlan)#exit
+S1(config)#int vlan 99
+S1(config-if)#
+%LINK-5-CHANGED: Interface Vlan99, changed state to up
+
+S1(config-if)#ip address 192.168.1.2 255.255.255.0
+S1(config-if)#ip6 address 2001:db8:acad:1::2 /64
+                ^
+% Invalid input detected at '^' marker.
+	
+S1(config-if)#ipv6 address 2001:db8:acad:1::2 /64
+                                              ^
+% Invalid input detected at '^' marker.
+	
+S1(config-if)#ipv6 address 2001:db8:acad:1::2 /64
+                                              ^
+% Invalid input detected at '^' marker.
+	
+S1(config-if)#
+S1(config-if)#
+S1(config-if)#
+S1(config-if)#ipv6 address fe80::2 link-local
+S1(config-if)#ipv6 address 2001:db8:acad:1::2 /64
+                                              ^
+% Invalid input detected at '^' marker.
+	
+S1(config-if)#ipv6 address 2001:db8:acad:1::2/64
+S1(config-if)#
+S1(config-if)#
+S1(config-if)#
 
