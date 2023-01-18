@@ -19,3 +19,14 @@ sw mode access
 sw access vlan 50
 ex
 
+
+________________________________________________________________
+
+
+int range G1/0/1 - 2
+
+int range g0/1-2
+
+sw mode trunk
+
+sw trunk native vlan 99
