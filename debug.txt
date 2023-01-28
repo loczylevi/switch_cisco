@@ -1,0 +1,145 @@
+
+Switch>
+Switch>
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 10
+Switch(config-vlan)#name CEO
+Switch(config-vlan)#vlan 20
+Switch(config-vlan)#name Penzugy
+Switch(config-vlan)#vlan 30
+Switch(config-vlan)#name Muhely
+Switch(config-vlan)#vlan 40
+Switch(config-vlan)#name MGMT
+Switch(config-vlan)#vlan 99
+Switch(config-vlan)#name VLAN 
+Switch(config-vlan)#
+Switch(config-vlan)#
+Switch(config-vlan)#
+Switch(config-vlan)#
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (10).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (10).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (10).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (10).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (10).
+%SPANTREE-2-RECV_PVID_ERR: Received 802.1Q BPDU on non trunk GigabitEthernet0/2 VLAN1.
+
+%SPANTREE-2-BLOCK_PVID_LOCAL: Blocking GigabitEthernet0/2 on VLAN0001. Inconsistent port type.
+
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (99).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (99).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (99).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (99).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (99).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (99).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (99).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/2 (1), with Switch GigabitEthernet1/0/1 (99).
+%SPANTREE-2-RECV_PVID_ERR: Received 802.1Q BPDU on non trunk GigabitEthernet0/1 VLAN1.
+
+%SPANTREE-2-BLOCK_PVID_LOCAL: Blocking GigabitEthernet0/1 on VLAN0001. Inconsistent port type.
+
+
+
+Switch>
+Switch>
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int vlan 10
+Switch(config-if)#ip address 192.168.1.0 255.255.255.224
+Bad mask /27 for address 192.168.1.0
+Switch(config-if)#int vlan 20
+Switch(config-if)#ip address 192.168.1.32 255.255.255.224
+Bad mask /27 for address 192.168.1.32
+Switch(config-if)#int vlan 30
+Switch(config-if)#ip address 192.168.1.64 255.255.255.224
+Bad mask /27 for address 192.168.1.64
+Switch(config-if)#int vlan 40
+Switch(config-if)#ip address 192.168.1.96 255.255.255.224
+Bad mask /27 for address 192.168.1.96
+Switch(config-if)#int range g0/1 - 2
+Switch(config-if-range)#sw mode trunk
+
+
+Switch(config-if-range)#sw trunk native vlan 99
+%LINK-5-CHANGED: Interface Vlan10, changed state to up
+
+%LINK-5-CHANGED: Interface Vlan20, changed state to up
+
+%LINK-5-CHANGED: Interface Vlan30, changed state to up
+
+%LINK-5-CHANGED: Interface Vlan40, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan10, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan20, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan30, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan40, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to up
+%SPANTREE-2-RECV_PVID_ERR: Received BPDU with inconsistent peer vlan id 99 on GigabitEthernet0/1 VLAN1.
+
+%SPANTREE-2-BLOCK_PVID_LOCAL: Blocking GigabitEthernet0/1 on VLAN0001. Inconsistent local vlan.
+
+
+Switch(config-if-range)#
+Switch(config-if-range)#
+Switch(config-if-range)#
+Switch(config-if-range)#%SPANTREE-2-UNBLOCK_CONSIST_PORT: Unblocking GigabitEthernet0/1 on VLAN0099. Port consistency restored.
+
+%SPANTREE-2-UNBLOCK_CONSIST_PORT: Unblocking GigabitEthernet0/1 on VLAN0001. Port consistency restored.
+
+
+Switch(config-if-range)#
+Switch(config-if-range)#
+Switch(config-if-range)#
+Switch(config-if-range)#
