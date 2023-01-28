@@ -1,0 +1,21 @@
+en
+conf t
+
+int range fa0/1 - 4
+sw mode access
+sw access vlan 10
+ex
+int range fa0/5- 8
+sw mode access
+sw access vlan 20
+ex
+int range fa0/9-12
+sw mode access
+sw access vlan 30
+ex
+int range fa0/13 - 16
+sw mode access 
+sw access vlan 40
+ex
+
+do sh vlan
