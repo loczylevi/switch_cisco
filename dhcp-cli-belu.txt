@@ -1,0 +1,42 @@
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press RETURN to get started!
+
+
+
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#
+Router(config)#ip d
+Router(config)#ip d
+Router(config)#ip dh
+Router(config)#ip dhcp ex
+Router(config)#ip dhcp excluded-address 192.168.1.1 192.168.1.8
+Router(config)#ip dhcp pool i.11
+Router(dhcp-config)#def
+Router(dhcp-config)#default-router 192.168.1.1
+Router(dhcp-config)#network 192.168.1.0 255.255.255.0
+Router(dhcp-config)#dns
+Router(dhcp-config)#dns-server 8.8.8.8
+Router(dhcp-config)#domain
+Router(dhcp-config)#domain-name wmszki.hu
+Router(dhcp-config)#ex
+Router(config)#int g0/0
+Router(config-if)#no shut
+
+Router(config-if)#
+%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+
+Router(config-if)#ex
+Router(config)#int g0/0
+Router(config-if)#ip 192.168.1.1 255.255.255.0
+                     ^
+% Invalid input detected at '^' marker.
+	
+Router(config-if)#ip address 192.168.1.1 255.255.255.0
+Router(config-if)#ex
+Router(config)#
