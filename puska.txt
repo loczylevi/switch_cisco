@@ -1,0 +1,107 @@
+en 
+
+conf t
+
+
+
+vlan 10
+name CEO
+
+ex
+vlan 20
+name CLASS
+ex
+vlan 30
+name Workshop
+ex
+vlan 40
+name STAFF
+ex
+
+vlan 88
+name NATIVE
+
+ex
+
+vlan 99 
+name MGMT
+ex
+
+
+
+
+en
+conf t
+
+int range fa0/1 - 4
+sw mode access
+sw access vlan 10
+ex
+int range fa0/5- 10
+sw mode access
+sw access vlan 20
+ex
+int range fa0/11-15
+sw mode access
+sw access vlan 30
+ex
+int range fa0/16 - 21
+sw mode access 
+sw access vlan 40
+ex
+
+do sh vlan
+
+
+
+
+en 
+conf t
+
+hostname SW_4
+
+enable secret cisco
+
+username loczy secret class_1
+
+line con 0
+login local
+password class_1
+
+line vty 0 15
+
+login local
+
+
+transport input ssh
+
+ip ssh version 2
+
+
+
+ip domain-name wmszki.hu
+crypto key generate rsa
+1024
+
+banner motd #Unauthorized access is prohibited!#
+
+
+en
+conf t
+
+int range g0/1-2
+
+sw mode trunk
+
+sw trunk native vlan 88
+sw trunk allowed vlan 10,20,30,40,88,99
+end
+
+
+
+
+
+
+
+
+
